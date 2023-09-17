@@ -25,6 +25,7 @@
             ).join('');
 
             document.getElementById("message").innerHTML = data.comment
+            document.getElementById("message").style.color = "red";
             document.getElementById("thesongs").innerHTML = theRepertoire;
         })
         .catch(err => {
