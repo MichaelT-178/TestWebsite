@@ -1,0 +1,231 @@
+{   
+    "comment": "This file is static and unaffected by the algorithm",
+    "description": "These are some of my favorite covers",
+	"FavoriteCovers":[
+		{
+            "Song": "Cello Song by Nick Drake",
+            "Appearance": "Livestream 31",
+            "Link": ""
+		},
+        {
+            "Song": "Vicent by Don McLean",
+            "Appearance": "Livestream 35",
+            "Link": ""
+		},
+        {
+            "Song": "She Talks To Angels by The Black Crowes",
+            "Appearance": "Livestream 28",
+            "Link": ""
+		},
+        {
+            "Song": "Blue Crystal Fire by Robbie Basho",
+            "Appearance": "Livestream 73",
+            "Link": ""
+		},
+        {
+            "Song": "Suit & Tie by Justin Timberlake",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Human Nature by Michael Jackson",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Burn One Down by Ben Harper",
+            "Appearance": "Livestream 65",
+            "Link": ""
+		},
+        {
+            "Song": "A Still and Silent Mountain by Corey Heuvel",
+            "Appearance": "Album Version",
+            "Link": ""
+		},
+        {
+            "Song": "Pistol Slapper Blues by Rory Gallagher",
+            "Appearance": "Livestream 43",
+            "Link": ""
+		},
+        {
+            "Song": "Out On The Western Plain by Rory Gallagher",
+            "Appearance": "Livestream 46",
+            "Link": ""
+		},
+        {
+            "Song": "Fields of Gold by Sting",
+            "Appearance": "Livestream 52",
+            "Link": ""
+		},
+        {
+            "Song": "Hymne à l'amour by Édith Piaf",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "3AM by Matchbox Twenty",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Cherry Wine by Hozier",
+            "Appearance": "Livestream 39",
+            "Link": ""
+		},
+        {
+            "Song": "Black Mountain Side by Led Zeppelin",
+            "Appearance": "Livestream 85",
+            "Link": ""
+		},
+        {
+            "Song": "Place To Be by Nick Drake",
+            "Appearance": "Livestream 81",
+            "Link": ""
+		},
+        {
+            "Song": "Castles Made of Sand by Jimi Hendrix",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Ordinary Day by Great Big Sea",
+            "Appearance": "Livestream 64",
+            "Link": ""
+		},
+        {
+            "Song": "If I Had A Boat by Lyle Lovett",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Time in a Bottle by Jim Croce",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Jumper by Third Eye Blind",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Trouble So Hard by Vera Hall",
+            "Appearance": "Livestream 49",
+            "Link": ""
+		},
+        {
+            "Song": "Life by the Drop by Stevie Ray Vaughan",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Kiss from a Rose by Seal",
+            "Appearance": "Livestream 32",
+            "Link": ""
+		},
+        {
+            "Song": "Mama, You Been on My Mind by Jeff Buckley",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Hemorrhage (In My Hands) by Fuel",
+            "Appearance": "Livestream 67",
+            "Link": ""
+		},
+        {
+            "Song": "The Boy with the Thorn in His Side by The Smiths",
+            "Appearance": "Livestream 136",
+            "Link": ""
+		},
+        {
+            "Song": "The Night They Drove Old Dixie Down by The Band",
+            "Appearance": "Livestream ",
+            "Link": ""
+		},
+        {
+            "Song": "Them Bones by Alice In Chains",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Tell Me Why by Neil Young",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Between the Bars by Elliott Smith",
+            "Appearance": "Livestream ",
+            "Link": ""
+		},
+        {
+            "Song": "Angel from Montgomery by John Prine",
+            "Appearance": "Livestream ",
+            "Link": ""
+		},
+        {
+            "Song": "Eyes Wider than Before by Scott Matthews",
+            "Appearance": "Livestream ",
+            "Link": ""
+		},
+        {
+            "Song": "Soul Embers by Corey Heuvel",
+            "Appearance": "Solo Video",
+            "Link": ""
+		},
+        {
+            "Song": "Interstate Love Song by Stone Temple Pilots",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "It Ain't Me Babe by Bob Dylan",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Beast Of Burden by The Rolling Stones",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Helpless by Crosby, Stills, Nash & Young",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Lola by The Kinks",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Lost Highway by Hank Williams",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Little Black Submarines by The Black Keys",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Mojo Pin by Jeff Buckley",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Nobody's Fault But My Own by Beck",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "Nutshell by Alice In Chains",
+            "Appearance": "Livestream",
+            "Link": ""
+		},
+        {
+            "Song": "The Cave by Mumford & Sons",
+            "Appearance": "Livestream",
+            "Link": ""
+		}
+    ]
+}

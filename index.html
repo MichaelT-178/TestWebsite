@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="message"></div>
+    <div id="thesongs"></div>
+
+    <script>
+        fetch("fav_covers.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                const favoriteCovers = data.FavoriteCovers;
+                const theRepertoire = favoriteCovers.map((cover) => 
+                 `<li id="songelements">${cover.Song} (${cover.Appearance})</li>`
+                //  `<li id="songelements">${cover.Song} (${cover.Appearance})</li>`
+                // `<div style="margin: 10px 0;">• <a href="${link}" style= "font-size: 25px;text-decoration: none;">${web[i]}</a></div>`
+            ).join('');
+
+            document.getElementById("message").innerHTML = data.comment
+            document.getElementById("thesongs").innerHTML = theRepertoire;
+        })
+        .catch(err => {
+            console.error("Error loading JSON file:", err);
+        });
+    </script>
+
+
+</body>
+</html>
