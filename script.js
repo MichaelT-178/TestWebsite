@@ -21,10 +21,10 @@ fetch("fav_covers.json")
             const card = userCardTemplate.content.cloneNode(true).children[0];
             const header = card.querySelector("[data-header]");
             const body = card.querySelector("[data-body]");
-
-
+            
             header.textContent = user.Song
-            body.textContent = user.Appearance
+            body.textContent = user.Appearance  
+            card.href = user.Link;
 
             userCardContainer.append(card)
 
