@@ -32,7 +32,7 @@ input {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 0.25rem;
         margin-top: 0.25rem; /* Adjust the margin-top value as needed */
-        padding: 1rem; /* Add padding to the sides */
+        padding: 0.25rem; /* Add padding to the sides */
     }
 }
 
