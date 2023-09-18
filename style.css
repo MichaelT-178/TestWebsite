@@ -6,13 +6,6 @@ html {background-color: black; display: inline;}
     gap: .25rem;
     align-items: center; 
 }
-/*  
-.search-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-items: center; Center items horizontally
-} */
 
 input[type="search"] {
     font-size: 1rem;
@@ -24,13 +17,6 @@ input {
     font-size: 1rem;
 }
 
-/* .user-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: .25rem;
-    margin-top: 1rem;
-} */
-
 
 .user-cards {
     display: grid;
@@ -38,6 +24,16 @@ input {
     gap: 0.25rem;
     margin-top: 0.25rem; /* Adjust the margin-top value as needed */
     padding: 2rem; /* Add padding to the sides */
+}
+
+@media (max-width: 600px) {
+    .user-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.25rem;
+        margin-top: 0.25rem; /* Adjust the margin-top value as needed */
+        padding: 1rem; /* Add padding to the sides */
+    }
 }
 
 
