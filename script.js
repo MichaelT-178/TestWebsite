@@ -6,7 +6,7 @@ let users = []
 
 
 searchInput.addEventListener("input", (e) => {
-    const value = e.target.value.toLowerCase();
+    const value = e.target.value.trim().toLowerCase();
 
     users.forEach(user => {
         const isVisible = user.song.toLowerCase().includes(value);
@@ -28,6 +28,7 @@ fetch("fav_covers.json")
 
             userCardContainer.append(card)
 
+            console.log("HELLo")
             return {song: user.Song, element: card }
         })
         
