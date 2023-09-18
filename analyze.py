@@ -59,6 +59,6 @@ with open('fav_covers.json', 'w') as file:
     json.dump(fav_data, file, indent=4, ensure_ascii=False)
 
 
-print(f"A still and silent mountain link: https://youtu.be/o_u2RWvoGLU?si=yA5415-yGb_AtwZC?t=1718 ")
+print(f"A still and silent mountain link: https://youtu.be/o_u2RWvoGLU?si=yA5415-yGb_AtwZC&t=1718")
 
 
