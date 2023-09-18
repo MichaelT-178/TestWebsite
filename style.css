@@ -1,3 +1,5 @@
+html {background-color: black; display: inline;}
+
 .search-wrapper {
     display: flex;
     flex-direction: column;
@@ -15,9 +17,15 @@ input {
     margin-top: 1rem;
 }
 
+.header, .card {
+    text-decoration: none;
+    --bs-text-opacity:1;
+    color:rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important;
+}
+
 .card {
     border: 1px solid black;
-    background-color: white;
+    background-color: #222;
     padding: .5rem;
 }
 
@@ -27,9 +35,10 @@ input {
 
 .card > .body {
     font-size: .8rem;
-    color: #777;
+    color:#B9B9B9;
 }
 
 .hide {
     display: none;
 }
+
