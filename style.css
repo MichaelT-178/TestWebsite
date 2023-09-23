@@ -1,5 +1,21 @@
 html {background-color: black; display: inline;}
 
+header {
+    /* background-color: steelblue; */
+    width: 100%; /* Cover the entire width of the screen */
+    padding: 10px 0; /* Add padding above and below (adjust as needed) */
+}
+
+/* Add top and bottom padding to the search bar */
+.search-wrapper {
+    padding: 8px 0; /* Make the padding of the blue header bigger */
+}
+
+.header-padding {
+    padding: 8px 0; /* Add padding above and below */
+}
+
+
 .search-wrapper {
     display: flex;
     flex-direction: column;
@@ -23,7 +39,7 @@ input {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 0.25rem;
     margin-top: 0.25rem; /* Adjust the margin-top value as needed */
-    padding: 2rem; /* Add padding to the sides */
+    /* padding: 2rem; Add padding to the sides */
 }
 
 @media (max-width: 600px) {
@@ -33,6 +49,10 @@ input {
         gap: 0.25rem;
         margin-top: 0.25rem; /* Adjust the margin-top value as needed */
         padding: 0.25rem; /* Add padding to the sides */
+    }
+
+    .search-wrapper {
+        padding: 0px 0; /* Make the padding of the blue header bigger */
     }
 }
 
