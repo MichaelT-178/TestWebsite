@@ -55,6 +55,10 @@ input {
         width: 95%; /* Adjust as needed */
         max-width: none; /* Remove max-width restriction */
     } 
+    
+    #message {
+        font-size: 0px;
+    }
 }
 
 

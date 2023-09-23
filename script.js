@@ -4,7 +4,6 @@ const searchInput = document.querySelector("[data-search]")
 
 let users = [] 
 
-
 searchInput.addEventListener("input", (e) => {
     const value = e.target.value.trim().toLowerCase();
 
@@ -27,8 +26,7 @@ fetch("fav_covers.json")
             card.href = user.Link;
 
             userCardContainer.append(card)
-
-            console.log("HELLo")
+            
             return {song: user.Song, element: card }
         })
         
