@@ -8,7 +8,7 @@ header {
 
 /* Add top and bottom padding to the search bar */
 .search-wrapper {
-    padding: 8px 0; /* Make the padding of the blue header bigger */
+    padding: 0px 0; /* Make the padding of the blue header bigger was 8.*/
 }
 
 .header-padding {
@@ -49,10 +49,6 @@ input {
         gap: 0.25rem;
         margin-top: 0.25rem; /* Adjust the margin-top value as needed */
         padding: 0.25rem; /* Add padding to the sides */
-    }
-
-    .search-wrapper {
-        padding: 0px 0; /* Make the padding of the blue header bigger */
     }
 }
 
