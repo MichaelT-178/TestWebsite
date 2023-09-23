@@ -49,11 +49,6 @@ for fav_song in fav_data["FavoriteCovers"]:
 
 print(other_count)
 
-for a in app2:
-    if a not in app1:
-        print(a)
-
-
 # Step 3: Write the modified data structure back to the JSON file
 with open('fav_covers.json', 'w') as file:
     json.dump(fav_data, file, indent=4, ensure_ascii=False)
