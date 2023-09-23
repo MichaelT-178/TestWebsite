@@ -53,7 +53,7 @@ input {
 
     input[type="search"] {
         font-size: 1rem;
-        width: 90%; /* Adjust as needed */
+        width: 95%; /* Adjust as needed */
         max-width: none; /* Remove max-width restriction */
     } 
 }
