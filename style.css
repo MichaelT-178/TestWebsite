@@ -50,6 +50,12 @@ input {
         margin-top: 0.25rem; /* Adjust the margin-top value as needed */
         padding: 0.25rem; /* Add padding to the sides */
     }
+
+    input[type="search"] {
+        font-size: 1rem;
+        width: 90%; /* Adjust as needed */
+        max-width: none; /* Remove max-width restriction */
+    } 
 }
 
 
