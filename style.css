@@ -52,8 +52,8 @@ input {
 
     input[type="search"] {
         font-size: 1rem;
-        width: 95%; /* Adjust as needed */
-        max-width: none; /* Remove max-width restriction */
+        width: 95%;
+        max-width: none; /* Removes max-width restriction */
     } 
     
     #message {
