@@ -6,6 +6,26 @@ document.getElementById('result-artist').innerText = ": Beck";
 document.getElementById('result-otherart').innerText = ": N/A";
 document.getElementById('result-instruments').innerText = ": Acoustic Guitar";
 
+
+
+
+const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
+
+const instruments = [
+    "Acoustic Guitar",
+    "Electric Guitar"
+]
+
+if (mediaQuery.matches) {
+    document.getElementById('result-instruments').innerHTML = "";
+
+    document.getElementById('result-instrument').innerHTML = instruments.map((instrument) => 
+    ` <div style="font-size:24px;margin: 6px 0; left: 5px;margin-left: 33px;"> • ${instrument} </div>`
+    ).join(''); 
+}; 
+
+
+
 const links = ["https://youtu.be/7Yc3utlluNc&t=7509" , 
 "https://youtu.be/bEBVkT9SWFY&t=3065", 
 "https://youtu.be/Qh8m_ldN2zw&t=5956" , 
@@ -16,7 +36,6 @@ const allLinks = links.map((link, i) =>
 ).join('');
 
 document.getElementById('result-links').innerHTML = allLinks;
-
 
 window.addEventListener("resize", function () {
     var w = window.innerWidth;
