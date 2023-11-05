@@ -3,6 +3,10 @@ html {
     display: inline;
 }
 
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -99,7 +103,7 @@ a:hover {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     #songInfo {
         left: 5px;
     }
