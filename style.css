@@ -96,15 +96,26 @@ a:hover {
     color: #0000FF;
 }
 
-
 @media (max-width: 700px) {
+    html, body {
+        margin: 0; 
+        height: 100%; 
+        overflow-x: hidden
+    }
+
     #songInfo {
         left: -50px;
     }
 }
 
 @media (max-width: 450px) {
+    html, body {
+        margin: 0; 
+        height: 100%; 
+        overflow-x: hidden
+    }
+
     #songInfo {
-        left: 5px;
+        left: 0px;
     }
 }
