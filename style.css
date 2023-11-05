@@ -95,6 +95,12 @@ a:hover {
 
 @media (max-width: 700px) {
     #songInfo {
-        left: 0px;
+        left: -50px;
+    }
+}
+
+@media (max-width: 500px) {
+    #songInfo {
+        left: 20px;
     }
 }
