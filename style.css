@@ -1,89 +1,84 @@
-html {background-color: black; display: inline;}
-
-header {
-    /* background-color: steelblue; */
-    width: 100%; /* Cover the entire width of the screen */
-    padding: 10px 0; /* Add padding above and below (adjust as needed) */
+html { 
+    background-color: black; 
+    display: inline;
 }
 
-/* Add top and bottom padding to the search bar */
-.search-wrapper {
-    padding: 0px 0; /* Make the padding of the blue header bigger was 8.*/
-}
-
-.header-padding {
-    padding: 8px 0; /* Add padding above and below */
-}
-
-.search-wrapper {
+.container {
     display: flex;
     flex-direction: column;
-    gap: .25rem;
-    align-items: center; 
+    align-items: center;
+    text-align: center;
 }
 
-input[type="search"] {
-    font-size: 1rem;
-    width: 80%; /* Adjust as needed */
-    max-width: none; /* Remove max-width restriction */
-} 
-
-input {
-    font-size: 1rem;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-
-.user-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 0.25rem;
-    margin-top: 0.25rem; /* Adjust the margin-top value as needed */
-    /* padding: 2rem; Add padding to the sides */
+.underline {
+    text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    .user-cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-        gap: 0.25rem;
-        margin-top: 0.25rem; /* Adjust the margin-top value as needed */
-        padding: 0.25rem; /* Add padding to the sides */
-    }
-
-    input[type="search"] {
-        font-size: 1rem;
-        width: 95%;
-        max-width: none; /* Removes max-width restriction */
-    } 
-    
-    #message {
-        font-size: 0px;
-    }
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--bs-body-font-family)
 }
 
-
-.header, .card {
-    text-decoration: none;
-    --bs-text-opacity:1;
-    color:rgba(var(--bs-primary-rgb),var(--bs-text-opacity))!important;
+#pic1 {
+    border: 2px solid rgb(89, 89, 89);
 }
 
-.card {
-    border: 1px solid black;
-    background-color: #222;
-    padding: .5rem;
+#LightBlueText {
+    color: lightBlue;  
 }
 
-.card > .header {
-    margin-bottom: .25rem;
+#songInfo {
+    position: relative; 
+    top: 2px;
+    left: -115px;
+    text-align: left;
 }
 
-.card > .body {
-    font-size: .8rem;
-    color:#B9B9B9;
+#result-title {
+    display: inline;
 }
 
-.hide {
-    display: none;
+#result-artist {
+    display: inline;
 }
 
+#result-otherart {
+    display: inline;
+}
+
+#result-instruments {
+    color: lightBlue;  
+    text-decoration:none;
+    display:inline-block;
+}
+
+#result-instrument {
+    color: lightBlue;  
+    text-decoration:none;
+    word-wrap: break-word;
+    display: inline-block;
+    max-width: 70%;
+    word-break: break-word;
+}
+
+#Links {
+    color: lightBlue;  
+    text-decoration: underline;
+}
+
+#result-links {
+    color: lightBlue;  
+    position: relative;
+    top: -10px;
+    left: 18px;
+}
