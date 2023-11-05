@@ -1,33 +1,16 @@
-const userCardTemplate = document.querySelector("[data-user-template]")
-const userCardContainer = document.querySelector("[data-user-cards-container]")
-const searchInput = document.querySelector("[data-search]")
 
-let users = [] 
 
-searchInput.addEventListener("input", (e) => {
-    const value = e.target.value.trim().toLowerCase();
+document.getElementById("pic1").src = "Beck.jpg";
+document.getElementById('result-title').innerText = ": Nobody's Fault But My Own";
+document.getElementById('result-artist').innerText = ": Beck";
+document.getElementById('result-otherart').innerText = ": N/A";
+document.getElementById('result-instruments').innerText = ": Acoustic Guitar";
 
-    users.forEach(user => {
-        const isVisible = user.song.toLowerCase().includes(value);
-        user.element.classList.toggle("hide", !isVisible);
-    })
+const links = ["https://youtu.be/7Yc3utlluNc&t=7509" , 
+"https://youtu.be/bEBVkT9SWFY&t=3065", 
+"https://youtu.be/Qh8m_ldN2zw&t=5956" , 
+"https://youtu.be/QLLYLiTUyDY?feature=share&t=5669"];
+
+instruments.forEach(element => {
+    console.log(element)
 });
-
-fetch("fav_covers.json")
-    .then(res => res.json())
-    .then(data => {
-        users = data.FavoriteCovers.map(user => {
-            const card = userCardTemplate.content.cloneNode(true).children[0];
-            const header = card.querySelector("[data-header]");
-            const body = card.querySelector("[data-body]");
-            
-            header.textContent = user.Song
-            body.textContent = user.Appearance  
-            card.href = user.Link;
-
-            userCardContainer.append(card)
-            
-            return {song: user.Song, element: card }
-        })
-        
-    });
