@@ -1,46 +1,46 @@
 <!DOCTYPE html> 
-<html lang="en" >
+<html lang="en" class="notranslate" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head><meta name="google" content="notranslate" /></head>
     <link rel="stylesheet" href="style.css">
-    <title>Song Info</title>
+    <title>Repertoire</title>
 </head>
 <body>
-
     <h1 id="myHeader">
-        Song Information
+        Corey's Repertoire
     </h1>
-
-    <div class="container">
-        <img id="pic1"
-            alt="Picture that goes with the song"
-            style="width:300px;height:228px;"
-            class="center">
-        </img>
-        
-        <div id="songInfo">
-            <span id="cool" style="color: maroon;"></span>
-            <h2 id="LightBlueText">
-                <span class="underline">Title</span><span id="result-title"></span>
-            </h2>
-            <h2 id="LightBlueText">
-                <span class="underline">Artist</span><span id="result-artist"></span>
-            </h2> 
-            <h2 id="LightBlueText">
-                <span class="underline">Other Artists</span><span id="result-otherart"></span>
-            </h2> 
-            <h2 id="LightBlueText">
-                <span class="underline">Instruments</span><span id="result-instruments"></span>
-            </h2> 
-            <p id="result-instrument" style="word-wrap: break-word; white-space: nowrap; margin-top: -18px;"></p>
-            <h2 id="Links" style="margin-top: -15px;">
-                Links to Livestreams
-            </h2>
-            <span id="result-links"></span>
-        </div>
+    
+    <div id="songList">
+        <!-- <p id="cool" style="color: red"</p> -->
+        <ul id="thesongs"></ul>
     </div>
-    <script src="script.js"></script>
+    
+    <script>
+        fetch("repertoire.json").then(response => {
+            return response.json();
+        }).then(songs => {
+            
+            const theRepertoire = songs.map((song) => 
+            `<li id="songelements">${(song !== "") ? song : ""}</li>`
+            ).join('');
+
+            document.getElementById("thesongs").innerHTML = theRepertoire;
+            
+        }).catch(err => {
+            console.error("\"repertoire.json\" file not found");
+        });
+
+        window.addEventListener("resize", function () {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            document.getElementById("cool").innerText = "Inner Width: " + w + ", Inner Height: " + h;
+        });
+
+    </script>
+
 </body>
 </html>
