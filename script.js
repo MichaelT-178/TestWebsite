@@ -6,9 +6,6 @@ document.getElementById('result-artist').innerText = ": Beck";
 document.getElementById('result-otherart').innerText = ": N/A";
 document.getElementById('result-instruments').innerText = ": Acoustic Guitar";
 
-
-
-
 const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
 
 const instruments = [

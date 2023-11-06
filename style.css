@@ -3,23 +3,12 @@ html {
     display: inline;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-
-.underline {
-    text-decoration: underline;
-}
+} 
 
 #myHeader {
     background-color: lightblue;
@@ -29,89 +18,36 @@ html {
     font-family: var(--bs-body-font-family)
 }
 
-#pic1 {
-    border: 2px solid rgb(89, 89, 89);
-}
-
-#LightBlueText {
-    color: lightBlue;  
-}
-
-#songInfo {
-    position: relative; 
-    top: 2px;
-    left: -115px;
+ul {
+    display: table; 
+    margin: 0 auto;
     text-align: left;
 }
 
-#result-title {
-    display: inline;
-}
-
-#result-artist {
-    display: inline;
-}
-
-#result-otherart {
-    display: inline;
-}
-
-#result-instruments {
-    color: lightBlue;  
-    text-decoration:none;
-    display:inline-block;
-}
-
-#result-instrument {
-    color: lightBlue;  
-    text-decoration:none;
-    word-wrap: break-word;
-    display: inline-block;
-    max-width: 70%;
-    word-break: break-word;
-}
-
-#Links {
-    color: lightBlue;  
-    text-decoration: underline;
-}
-
-#result-links {
-    color: lightBlue;  
+#songList {
     position: relative;
-    top: -10px;
-    left: 18px;
+    left: 162px;
 }
 
-
-a {
-    color: #2a9fd6;
+#songelements {
+    color: #C6C6C6; 
+    font-size: 19px;
 }
 
-a:hover {
-    color: #0000FF;
+#songelements:empty {
+    color: black;
 }
 
-@media (max-width: 700px) {
-    html, body {
-        margin: 0; 
-        height: 100%; 
-        overflow-x: hidden
-    }
-
-    #songInfo {
-        left: -50px;
+@media (max-width: 800px) {
+    
+    #songList {
+        left: 100px;
     }
 }
 
-@media (max-width: 450px) {
-    html, body {
-        margin: 0; 
-        height: 100%; 
-        overflow-x: hidden
-    }
-
-    #songInfo {
+@media (max-width: 600px) {
+    
+    #songList {
         left: 0px;
     }
 }
