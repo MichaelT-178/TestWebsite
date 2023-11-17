@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: green;
+    color: pink;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -14,7 +14,7 @@ html {
 
 #link, #helplink {
     /* position: fixed; */
-    position: absolute;
+    /* position: absolute; */
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -22,12 +22,22 @@ html {
 }
 
 #link {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    bottom: 80px; 
+    position: absolute;
+    font-size: 20px; 
+}
+
+#helplink {
+    /* margin-bottom: 25px; */
+    bottom: 50px; 
+    position: absolute;
+    font-size: 20px; 
 }
 
 #InstrumentList {
     text-align: center;
-    max-width: 400px; 
+    /* max-width: 400px;  */
     margin: auto;
     position: absolute;
     left: 50%;
@@ -69,4 +79,17 @@ a {
 
 a:hover {
     color: #0000FF;
+}
+
+
+/* @media (min-device-width: 375px) and (max-device-width: 812px) { */
+@media (max-width: 400px) {
+
+    #link {
+        color: red;
+    }
+    
+    #helplink {
+        color: red;
+    }
 }
