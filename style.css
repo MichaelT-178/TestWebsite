@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: darkblue;
+    color: pink;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -86,9 +86,12 @@ a:hover {
 
     #link {
         color: red;
+        font-size: 20px;
     }
     
     #helplink {
         color: red;
+        font-size: 20px;
     }
+
 }
