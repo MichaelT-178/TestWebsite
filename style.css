@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: pink;
+    color: darkblue;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -25,14 +25,12 @@ html {
     /* margin-bottom: 25px; */
     bottom: 80px; 
     position: absolute;
-    font-size: 20px; 
 }
 
 #helplink {
     /* margin-bottom: 25px; */
     bottom: 50px; 
     position: absolute;
-    font-size: 20px; 
 }
 
 #InstrumentList {
