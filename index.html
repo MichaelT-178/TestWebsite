@@ -1,46 +1,33 @@
 <!DOCTYPE html> 
-<html lang="en" class="notranslate" translate="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <head><meta name="google" content="notranslate" /></head>
     <link rel="stylesheet" href="style.css">
-    <title>Repertoire</title>
+    <title>Help</title>
 </head>
 <body>
     <h1 id="myHeader">
-        Corey's Repertoire
+        Help
     </h1>
-    
-    <div id="songList">
-        <!-- <p id="cool" style="color: red"</p> -->
-        <ul id="thesongs"></ul>
+
+    <div id="InstrumentList">
+        <h2 id="InstrumentTitle"> Instruments </h2>
+        <ul id="Instruments">
+            <li><span>Acoustic Guitar</span></li>
+            <li><span>Electric Guitar</span></li>
+            <li><span>Classical Guitar</span></li>
+            <li><span>Mandolin</span></li>
+            <li><span>Harmonica</span></li>
+            <li><span>Blues Slide</span></li>
+            <li><span>Electric Riff Session</span></li>
+        </ul>
     </div>
-    
-    <script>
-        fetch("repertoire.json").then(response => {
-            return response.json();
-        }).then(songs => {
-            
-            const theRepertoire = songs.map((song) => 
-            `<li id="songelements">${(song !== "") ? song : ""}</li>`
-            ).join('');
-
-            document.getElementById("thesongs").innerHTML = theRepertoire;
-            
-        }).catch(err => {
-            console.error("\"repertoire.json\" file not found");
-        });
-
-        window.addEventListener("resize", function () {
-            var w = window.innerWidth;
-            var h = window.innerHeight;
-
-            document.getElementById("cool").innerText = "Inner Width: " + w + ", Inner Height: " + h;
-        });
-
-    </script>
+    <div class="text-center mt-4">
+        <a href="https://www.coolmathgames.com/" id="link">Corey's Repertoire</a>
+        <a href="https://www.coolmathgames.com/" id="helplink">Contact the Developer</a>
+    </div>
 
 </body>
 </html>
