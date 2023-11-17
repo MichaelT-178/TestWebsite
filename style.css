@@ -6,35 +6,29 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: darkblue;
+    color: red;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
 }
 
 #link, #helplink {
-    /* position: fixed; */
-    /* position: absolute; */
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 10px;
 }
 
 #link {
-    /* margin-bottom: 25px; */
-    bottom: 80px; 
-    position: absolute;
+    bottom: 63px;
 }
 
 #helplink {
-    /* margin-bottom: 25px; */
-    bottom: 50px; 
-    position: absolute;
+    bottom: 40px;
 }
 
 #InstrumentList {
     text-align: center;
-    /* max-width: 400px;  */
     margin: auto;
     position: absolute;
     left: 50%;
@@ -89,6 +83,16 @@ a:hover {
     
     #helplink {
         font-size: 20px;
+    }
+
+    li span {
+        position: relative;
+        left: 3px; /* Decreases space between bullet and list item */
+    }
+
+    #InstrumentList li {
+        padding-left: 0px; /* Increase left padding. Moves elements right*/
+        margin-bottom: 2.5px; /* Increases bottom space between list elements */
     }
 
 }
