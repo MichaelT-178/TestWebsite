@@ -1,25 +1,8 @@
+window.addEventListener("resize", function () {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
 
-<div id="message"></div>
-<div id="thesongs"></div>
+    document.getElementById("cool").innerText = "Inner Width: " + w + ", Inner Height: " + h;
+});
 
-<script>
-    fetch("fav_covers.json")
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            const favoriteCovers = data.FavoriteCovers;
-            const theRepertoire = favoriteCovers.map((cover) => 
-             `<li id="songelements">${cover.Song} (${cover.Appearance})</li>`
-            //  `<li id="songelements">${cover.Song} (${cover.Appearance})</li>`
-            // `<div style="margin: 10px 0;">• <a href="${link}" style= "font-size: 25px;text-decoration: none;">${web[i]}</a></div>`
-        ).join('');
-
-        document.getElementById("message").innerHTML = data.comment
-        document.getElementById("message").style.color = "red";
-        document.getElementById("thesongs").innerHTML = theRepertoire;
-    })
-    .catch(err => {
-        console.error("Error loading JSON file:", err);
-    });
-</script>
+<!-- <p id="cool" style="color: red"</p> -->
