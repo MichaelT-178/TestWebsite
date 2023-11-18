@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: orange;
+    color: blue;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -87,13 +87,13 @@ a:hover {
     }
 
     #link {
-        bottom: 67px; 
-        left: 30.3%;
+        bottom: 65px; 
+        left: 30.8%;
     }
 
     #helplink {
-        bottom: 38px; 
-        left: 27%;
+        bottom: 36px; 
+        left: 27.5%;
     }
 
     li span {
