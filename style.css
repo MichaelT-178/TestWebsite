@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: purple;
+    color: black;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -82,7 +82,7 @@ a:hover {
     }
 
     #InstrumentList {
-        top: 333px; 
+        top: 332px; 
     }
 
     #InstrumentTitle {
@@ -98,12 +98,12 @@ a:hover {
     }
 
     #link {
-        bottom: 52px; /*65 */
+        bottom: 51px; /*65 */
         left: 30.8%;
     }
 
     #helplink {
-        bottom: 23px; /*36*/
+        bottom: 22px; /*36*/
         left: 27.5%;
     }
 
