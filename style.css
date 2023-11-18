@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: orange
+    color: orange;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
