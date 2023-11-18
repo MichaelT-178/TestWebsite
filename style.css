@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: olivedrab;
+    color: blue;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -82,7 +82,7 @@ a:hover {
     }
 
     #InstrumentList {
-        top: 350px; 
+        top: 340px; 
     }
 
     /* Set all values to default css "null" equivalent */
