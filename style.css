@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: red;
+    color: purple;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -77,15 +77,30 @@ a:hover {
 /* @media (min-device-width: 375px) and (max-device-width: 812px) { */
 @media (max-width: 400px) {
 
+
+    /* Set all values to default css "null" equivalent */
+    #link, #helplink {
+        position: fixed;
+        left: 0%;
+        transform: translateX(0%);
+        margin: 0 0px;
+        bottom: 0
+    }
+
     #link {
-        font-size: 20px;
-        bottom: 63px;
+        bottom: 70px; 
+        position: absolute;
+        font-size: 20px; 
+        left:31.3%;
     }
-    
+
     #helplink {
-        font-size: 20px;
-        bottom: 40px;
+        bottom: 41px; 
+        position: absolute;
+        font-size: 20px; 
+        left:28%;
     }
+
 
     li span {
         position: relative;
