@@ -6,7 +6,7 @@ html {
 #myHeader {
     background-color: lightblue;
     /* color: black; */
-    color: red;
+    color: purple;
     padding: 20px;
     text-align: center;
     font-family: var(--bs-body-font-family)
@@ -82,10 +82,11 @@ a:hover {
     }
 
     #InstrumentList {
-        top: 335px; 
+        top: 333px; 
     }
+
     #InstrumentTitle {
-        margin-bottom: 5px; 
+        margin-bottom: 4px; 
     }
 
     /* Set all values to default css "null" equivalent */
@@ -97,12 +98,12 @@ a:hover {
     }
 
     #link {
-        bottom: 53px; /*65 */
+        bottom: 52px; /*65 */
         left: 30.8%;
     }
 
     #helplink {
-        bottom: 24px; /*36*/
+        bottom: 23px; /*36*/
         left: 27.5%;
     }
 
@@ -115,5 +116,4 @@ a:hover {
         padding-left: 0px; /* Increase left padding. Moves elements right*/
         margin-bottom: 2.5px; /* Increases bottom space between list elements */
     }
-
 }
