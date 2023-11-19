@@ -10,10 +10,19 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
    emailjs.sendForm(serviceID, templateID, this) 
     .then(() => {
-        alert('Email sent successfully!');
+        Swal.fire({
+            title: 'Success!',
+            text: 'Email sent successfully!',
+            confirmButtonColor: '#4CAF50'
+        });
         btn.value = 'Send Email';
-    }, (err) => {
-        alert('Email not sent! Error occurred.');
+    })
+    .catch((err) => { 
+        Swal.fire({
+            title: 'Error!',
+            text: 'Email not sent! Error occurred.',
+            confirmButtonColor: '#FF5733'
+        });
         btn.value = 'Send Email';
         console.log(err)
     });

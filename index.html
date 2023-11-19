@@ -9,24 +9,23 @@
 </head>
 <body>
     <h1 id="myHeader">
-      Email the Developer
+      Contact Developer
     </h1>
 
     <form id="form">
-      <textarea 
-        type="text" 
-        name="message" 
-        id="box" 
-        word-break="break-word;"
-        placeholder="Enter your message here. Please leave your email address for a response."
-        class="center">
-      </textarea>
+        <textarea 
+          type="text" 
+          name="message" 
+          id="box" 
+          word-break="break-word;"
+          placeholder="Enter your message here. Please leave your email address for a response."
+          class="center"></textarea>
 
-      <input 
-        type="submit" 
-        id="button" 
-        value="Send Email" 
-      >
+        <input 
+          type="submit" 
+          id="button" 
+          value="Send Email" 
+        >
     </form>
       
     <script type="text/javascript"
@@ -37,7 +36,7 @@
         emailjs.init('bCe2UFI1L7SfXITtA')
     </script>
 
-    <div id="SentOrNot"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <script src="email.js"></script>
 </body>
