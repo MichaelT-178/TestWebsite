@@ -5,42 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Help</title>
+    <title>Email</title>
 </head>
 <body>
     <h1 id="myHeader">
-        Help
+      Email the Developer
     </h1>
-    
-    <div>
-        <div id="InstrumentList">
-            <h2 id="InstrumentTitle"> Instruments </h2>
-            <ul id="Instruments">
-                <li><span>Acoustic Guitar</span></li>
-                <li><span>Electric Guitar</span></li>
-                <li><span>Classical Guitar</span></li>
-                <li><span>Mandolin</span></li>
-                <li><span>Harmonica</span></li>
-                <li><span>Blues Slide</span></li>
-                <li><span>Electric Riff Session</span></li>
-                <li><span>(Bl) - Furch Blue Gc-SA</span></li>
-                <li><span>(DX1R) - Martin DX1R</span></li>
-                <li><span>(MDT) - Maestro Double Top</span></li>
-                <li><span>(M) - Martin 00-15m</span></li>
-                <li><span>(NST) - Norman ST68</span></li>
-                <li><span>(OOM) - Furch OOM-SR-DB</span></li>
-                <li><span>(SAS) - Seagull Artist Studio</span></li>
-                <li><span>(SGI) - SGI Avenir CW20 </span></li>
-                <li><span>(SDB) - Stonebridge OM35ASR-DB</span></li>
-                <li><span>(V) - Furch Vintage 2 RS-SR</span></li>
-        </div>
 
-        <a href="https://www.coolmathgames.com/" id="link">Corey's Repertoire</a>
-        <a href="https://www.coolmathgames.com/" id="helplink">Contact the Developer</a>
-    
-    </div>
+    <form id="form">
+      <textarea 
+        type="text" 
+        name="message" 
+        id="box" 
+        word-break="break-word;"
+        placeholder="Enter your message here. Please leave your email address for a response."
+        class="center">
+      </textarea>
 
-  
+      <input 
+        type="submit" 
+        id="button" 
+        value="Send Email" 
+      >
+    </form>
+      
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+      
+    <script type="text/javascript">
+        emailjs.init('bCe2UFI1L7SfXITtA')
+    </script>
+
+    <div id="SentOrNot"></div>
+
+    <script src="email.js"></script>
 </body>
-<!-- <script src="script.js" defer></script> -->
 </html>
