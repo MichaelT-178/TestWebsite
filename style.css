@@ -48,7 +48,6 @@ html {
     }
 
     #button {
-        /* left: 49.7%; */
-        top: 410px;
+        margin-top: 18px;
     }
 } 
