@@ -43,6 +43,7 @@ html {
         top:2px;
         width: 330px;
         height: 260px;
+        resize: none;
         font-size: 17px;
     }
 
