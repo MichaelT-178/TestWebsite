@@ -38,7 +38,7 @@ html {
     width: 50%;
 }
 
-@media (min-device-width: 375px) and (max-device-width: 812px) {
+@media (max-width: 400) {
     #box {
         top:2px;
         width: 330px;
