@@ -23,7 +23,7 @@ html {
 #button {
     margin: 0;
     position: absolute;
-    left: 50%; 
+    left: 49.4%; 
     transform: translate(-50%, -50%);
     margin-top: 23.5px;
     width: 45;
@@ -48,7 +48,6 @@ html {
     }
 
     #button {
-        left: 48%;
         margin-top: 24px;
     }
 } 
