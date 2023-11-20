@@ -19,12 +19,14 @@
           id="box" 
           word-break="break-word;"
           placeholder="Enter your message here. Please leave your email address for a response."
-          class="center"></textarea>
+          class="center"
+          oninput="enableButton()"></textarea>
 
         <input 
           type="submit" 
           id="button" 
           value="Send Email" 
+          disabled
         >
     </form>
       
@@ -33,7 +35,13 @@
     </script>
       
     <script type="text/javascript">
-        emailjs.init('bCe2UFI1L7SfXITtA')
+        emailjs.init('bCe2UFI1L7SfXITtA');
+        
+        const enableButton = () => {
+            const message = document.getElementById('box').value.trim();
+            const button = document.getElementById('button');
+            button.disabled = message === '';
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
