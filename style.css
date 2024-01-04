@@ -74,8 +74,8 @@ a:hover {
         margin-left: 5px;
     }
 
-    #result-instruments {
-        top: -10px;
+    #result-instrument {
+        margin-top: -10px;
     }
 } 
 
