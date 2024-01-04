@@ -62,6 +62,18 @@ a:hover {
     color: #0000FF;
 }
 
+@media (max-width: 450px) {
+    html, body {
+        margin: 0; 
+        height: 100%; 
+        overflow-x: hidden
+    }
+
+    #songInfo {
+        left: 5px;
+    }
+} 
+
 /* #songInfo {
     position: relative; 
     top: 2px;
