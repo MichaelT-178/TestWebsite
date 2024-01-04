@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const title = "Yeet Moon";
+    const title = "Full Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
@@ -17,12 +17,17 @@ window.addEventListener('load', () => {
     document.getElementById('result-instruments').innerHTML = ": " + instruments;
     
     const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
-    
+    const instrumentStyling = "font-size: 24px;" + 
+                              "color: lightBlue;" +
+                              "text-align: left;" +
+                              "margin-left: 26px;" +
+                              "margin-bottom: 9px;";
+
     if (mediaQuery.matches) {
         document.getElementById('result-instruments').innerHTML = "";
-
+        
         document.getElementById('result-instrument').innerHTML = instruments.split(",").map((instrument) => 
-        ` <div style="font-size:24px; color: lightBlue; text-align: left; margin-left: 26px; top: 0px; margin-bottom: 10px;"> • ${instrument} </div>`
+        ` <div style="${instrumentStyling}"> • ${instrument} </div>`
         ).join(''); 
 
         console.log(instruments.split(","))
