@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const title = "Pink Moon";
+    const title = "Yeet Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
