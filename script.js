@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const title = "Cyan Moon";
+    const title = "Blue Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
@@ -22,8 +22,10 @@ window.addEventListener('load', () => {
         document.getElementById('result-instruments').innerHTML = "";
 
         document.getElementById('result-instrument').innerHTML = instruments.split(",").map((instrument) => 
-        ` <div style="font-size:24px;margin: 6px 0; left: 5px;margin-left: 33px;"> • ${instrument} </div>`
+        ` <div style="font-size:24px;margin: 6px 0; left: 5px;margin-left: 33px; color: lightBlue;"> • ${instrument} </div>`
         ).join(''); 
+
+        console.log(instruments.split(","))
     }; 
     
     window.addEventListener('error', () => {
