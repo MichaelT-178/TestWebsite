@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const title = "Teal Moon";
+    const title = "Cyan Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
@@ -18,13 +18,13 @@ window.addEventListener('load', () => {
     
     const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
     
-    // if (mediaQuery.matches) {
-    //     document.getElementById('result-instruments').innerHTML = "";
+    if (mediaQuery.matches) {
+        document.getElementById('result-instruments').innerHTML = "";
 
-    //     document.getElementById('result-instrument').innerHTML = instruments.split(",").map((instrument) => 
-    //     ` <div style="font-size:24px;margin: 6px 0; left: 5px;margin-left: 33px;"> • ${instrument} </div>`
-    //     ).join(''); 
-    // }; 
+        document.getElementById('result-instrument').innerHTML = instruments.split(",").map((instrument) => 
+        ` <div style="font-size:24px;margin: 6px 0; left: 5px;margin-left: 33px;"> • ${instrument} </div>`
+        ).join(''); 
+    }; 
     
     window.addEventListener('error', () => {
         console.error("Image not found");
