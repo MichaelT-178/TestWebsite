@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     //add h's to instruments string to make it larger.
 
 
-    const title = "Teal Moon";
+    const title = "FULL Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
