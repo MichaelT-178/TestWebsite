@@ -1,19 +1,11 @@
 window.addEventListener('load', () => {
 
-
-    //If title, artist, other_artists, and instruments are all less than 27 
-    //add h's to instruments string to make it larger.
-
-
     const title = "FULL Moon";
     const artist = "Nick Drake";
     const other_artists = "";
     const appears = "Solo Video (Pink Moon Album/M),Livestream 74,Livestream 75 (DX1R),Livestream 81 (DX1R),Livestream 126 (DX1R),Livestream 164 (DX1R)";
-    let instruments = "Acoustic Guitar, (M) - Martin 00-15m, (DX1R) - Martin DX1R";  //"Acoustic Guitar<span style='color: black; user-select: none;'>hhhhhhhhhhhh</span>"; // Modified this line" //, (M) - Martin 00-15m, (DX1R) - Martin DX1R".replace(/,/g, "\t\t\t/\t\t\t");
+    let instruments = "Acoustic Guitar, (M) - Martin 00-15m, (DX1R) - Martin DX1R"; 
     
-    //instruments = localstorage.getItem('instruments')
-
-
     let numberOfH;
     let hString;
 
@@ -23,7 +15,7 @@ window.addEventListener('load', () => {
         numberOfH = 27 - instruments.length;
         hString = 'h'.repeat(Math.max(numberOfH, 0));
     }
-    
+
     instruments = `${instruments}<span style='color: red; user-select: none;'>${hString || ""}</span>`; 
 
     const image = "Beck.jpg";
