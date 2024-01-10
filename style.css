@@ -37,53 +37,7 @@ html {
     color: lightBlue;  
 }
 
-#songInfo h2 {
-    text-align: left;
-    margin-left: 20px; /* You can adjust the margin as needed */
-}
-
-#Links {
-    color: lightBlue;
-}
-
-#result-links {
-    text-align: left;
-    color: lightBlue;  
-    position: relative;
-    top: -12px;
-    left: 28px;
-} 
-
-a {
-    color: #2a9fd6;
-}
-
-a:hover {
-    color: #0000FF;
-}
-
-@media (max-width: 450px) {
-    html, body {
-        margin: 0; 
-        height: 100%; 
-        overflow-x: hidden
-    }
-
-    #songInfo h2 {
-        text-align: left;
-        margin-left: 5px;
-    }
-
-    #result-instrument {
-        margin-top: -19px;
-    }
-
-    #result-links {
-        left: 5px;
-    } 
-} 
-
-/* #songInfo {
+#songInfo {
     position: relative; 
     top: 2px;
     left: -115px;
@@ -102,6 +56,12 @@ a:hover {
     display: inline;
 }
 
+#result-instruments {
+    color: lightBlue;  
+    text-decoration:none;
+    display:inline-block;
+}
+
 #result-instrument {
     color: lightBlue;  
     text-decoration:none;
@@ -116,6 +76,14 @@ a:hover {
     text-decoration: underline;
 }
 
+#result-links {
+    color: lightBlue;  
+    position: relative;
+    top: -10px;
+    left: 18px;
+}
+
+
 a {
     color: #2a9fd6;
 }
@@ -124,7 +92,7 @@ a:hover {
     color: #0000FF;
 }
 
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
     html, body {
         margin: 0; 
         height: 100%; 
@@ -146,4 +114,4 @@ a:hover {
     #songInfo {
         left: 0px;
     }
-} */
+}
