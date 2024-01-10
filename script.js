@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     const other_artists = "";
     const appears = "Livestream 83";
     const instruments = "Acoustic Guitar";
-    const image = `../pics/Christina Perri.jpg`;
+    const image = `Beck.jpg`;
     const theLinks = "https://youtu.be/_7xQAOqGbk4&t=2792";
 
     theTitle = title.replace(" (Classical Guitar)", "").replace(" (Electric Song)", "");
