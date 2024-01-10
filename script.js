@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
 
-    const title = "A ThouSand Years";
+    const title = "A ThousAnd Years";
     const artist = "Christina Perri";
     const other_artists = "";
     const appears = "Livestream 83";
