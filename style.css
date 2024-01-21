@@ -73,14 +73,9 @@ a:hover {
         overflow-x: hidden
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
     #songInfo h2 {
         text-align: left;
-        /* margin-left: 0px; */
+        margin-left: 5px;
     }
 
     #result-instrument {
