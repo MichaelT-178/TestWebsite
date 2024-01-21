@@ -13,20 +13,20 @@ window.addEventListener('load', () => {
     let numberOfH;
     let hString;
 
-    //if condition is true add h's for length purposes to push thing to the left over so it's not dead center
-    //Kind of a ghetto fix but it works.
+    
     if (theTitle.length < 28 && artist.length < 28 && other_artists.length < 28 && instruments.length < 28) {
-        numberOfH = 17 - theTitle.length;
-        hString = 'h'.repeat(Math.max(numberOfH, 0));
-    }
+        // numberOfH = 0 //28 - theTitle.length;
+        // hString = 'h'.repeat(Math.max(numberOfH, 0));
 
-    instruments = `${instruments}<span style='color: black; user-select: none;'>${hString || ""}</span>`; 
+        var songInfoHeading = document.getElementById('songInfo');
+        var newMarginLeft = songInfoHeading.style.marginLeft - 100;
+        songInfoHeading.style.marginLeft = newMarginLeft + 'px';
+    }
 
     document.getElementById('result-title').innerHTML = ": " + theTitle;
     document.getElementById('result-artist').innerText = ": " + artist;
     document.getElementById('result-otherart').innerText = ": " + (other_artists || "N/A");
     document.getElementById('result-instruments').innerHTML = ": " + instruments;
-
 
     const instrumentList = instruments.split(",");
 
