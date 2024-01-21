@@ -10,16 +10,16 @@ window.addEventListener('load', () => {
 
     let theTitle = title + (title.includes("Session #") ? " (Check comments for full timestamp)" : "");
 
+    const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
+
     let numberOfH;
     let hString;
-
     
     if (theTitle.length < 28 && artist.length < 28 && other_artists.length < 28 && instruments.length < 28) {
-        // numberOfH = 0 //28 - theTitle.length;
-        // hString = 'h'.repeat(Math.max(numberOfH, 0));
-
         var songInfoHeading = document.getElementById('songInfo');
-        var newMarginLeft = songInfoHeading.style.marginLeft - 100;
+        var subtract = mediaQuery.matches ? 200 : 100;
+        var newMarginLeft = songInfoHeading.style.marginLeft - subtract;
+
         songInfoHeading.style.marginLeft = newMarginLeft + 'px';
     }
 
@@ -32,7 +32,6 @@ window.addEventListener('load', () => {
 
     const marginLeft = instrumentList.length > 2 ? 34 : 10;
 
-    const mediaQuery = window.matchMedia('(min-device-width: 375px) and (max-device-width: 812px)');
     const instrumentStyling = "font-size: 24px;" + 
                               "color: lightBlue;" +
                               "text-align: left;" +
