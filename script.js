@@ -16,9 +16,9 @@ window.addEventListener('load', () => {
     let hString;
     
     if (theTitle.length < 28 && artist.length < 28 && other_artists.length < 28 && instruments.length < 28) {
-        var songInfoHeading = document.getElementById('songInfo');
-        var subtract = mediaQuery.matches ? 140 : 100;
-        var newMarginLeft = songInfoHeading.style.marginLeft - subtract;
+        const songInfoHeading = document.getElementById('songInfo');
+        const subtract = mediaQuery.matches ? 125 : 100;
+        const newMarginLeft = songInfoHeading.style.marginLeft - subtract;
 
         songInfoHeading.style.marginLeft = newMarginLeft + 'px';
     }
