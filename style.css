@@ -22,7 +22,7 @@ html {
 }
 
 #myHeader {
-    background-color: lightblue;
+    background-color: red;
     color: black;
     padding: 15px;
     text-align: center;
@@ -39,7 +39,7 @@ html {
 
 #songInfo h2 {
     text-align: left;
-    margin-left: 20px; /* You can adjust the margin as needed */
+    margin-left: 20px; 
 }
 
 #Links {
