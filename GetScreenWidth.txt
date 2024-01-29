@@ -1,0 +1,15 @@
+<div id="screenWidth" style="float: right;">Screen width: </div>
+
+<script>
+    const updateScreenWidth = () => {
+        var width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+
+        document.getElementById('screenWidth').innerHTML = 'Screen width: ' + width + 'px';
+    }
+
+    updateScreenWidth();
+    
+    window.onresize = updateScreenWidth;
+</script>
