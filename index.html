@@ -13,6 +13,8 @@
         Song Information
     </h1>
 
+    <button id="myButton">Click me</button>
+
     <div class="container">
         <img id="pic1"
             alt="Picture that goes with the song"
@@ -41,5 +43,22 @@
         </div>
     </div>
     <script src="script.js"></script>
+
+    <script>
+    
+    function downloadResumeDocx() {
+        const docxUrl = 'https://michaelt-178.github.io/TestWebsite/ResumeTemplate.docx';
+        const link = document.createElement('a');
+
+        link.href = docxUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    
+    var button = document.getElementById("myButton");
+    button.addEventListener("click", downloadResumeDocx);
+    </script>
+    
 </body>
 </html>
