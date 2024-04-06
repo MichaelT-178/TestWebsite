@@ -81,5 +81,4 @@ window.addEventListener('load', () => {
     ).join('');
 
     document.getElementById('result-links').innerHTML = alllinks;
-
 });
