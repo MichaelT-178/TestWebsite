@@ -17,65 +17,13 @@ html {
     width: 50%;
 }
 
-.underline {
-    text-decoration: underline;
-}
-
-#myHeader {
-    background-color: teal;
-    color: black;
-    padding: 15px;
-    text-align: center;
-    font-family: var(--bs-body-font-family)
-}
-
-#pic1 {
-    border: 2px solid rgb(89, 89, 89);
-}
-
-#LightBlueText {
-    color: lightBlue;  
-}
-
-#songInfo h2 {
-    text-align: left;
-    margin-left: 20px; 
-}
-
-#Links {
-    color: lightBlue;
-}
-
-#result-links {
-    text-align: left;
-    color: lightBlue;  
-    position: relative;
-    top: -12px;
-    left: 28px;
-} 
-
-#result-instrument {
-    margin-top: 0px;
-}
-
-a {
-    color: #2a9fd6;
-}
-
-a:hover {
-    color: #0000FF;
-}
-
-@media (max-width: 450px) {
-    html, body {
-        margin: 0; 
-        height: 100%; 
-        overflow-x: hidden
-    }
-
-    #songInfo h2 {
-        text-align: left;
-        margin-left: 5px;
+@media (max-width: 400) {
+    #box {
+        top:2px;
+        width: 330px;
+        height: 260px;
+        resize: none;
+        font-size: 17px;
     }
 
     #result-instrument {
