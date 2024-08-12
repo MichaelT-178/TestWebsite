@@ -13,3 +13,34 @@
     
     window.onresize = updateScreenWidth;
 </script>
+
+
+VUE JS
+
+
+<template>
+  <div id="screenWidth" style="float: right;">
+    Screen width: {{ screenWidth }}px
+  </div>
+</template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const screenWidth = ref(0);
+
+const updateScreenWidth = () => {
+  screenWidth.value = window.innerWidth 
+    || document.documentElement.clientWidth 
+    || document.body.clientWidth;
+}
+
+onMounted(() => {
+  updateScreenWidth();
+  window.addEventListener('resize', updateScreenWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenWidth);
+});
+</script>
